@@ -1,3 +1,4 @@
+![enter image description here](https://user-images.githubusercontent.com/38127448/50680443-11477c80-104b-11e9-88a8-ec95cccd62af.gif)
 
 # Textyle.js
 
@@ -6,7 +7,9 @@ A simple text effect with jQuery and tiny CSS.
 # How to use
 
 ## JS
-Textyle.js requires **jQuery** and **textyle.js** ( or **textyle.min.js**)
+
+Textyle.js requires **jQuery** and **textyle.js** ( or **textyle.min.js**).
+Easing pattern can be extended by **jquery.easing.js**.
 
 ### read
 
@@ -49,7 +52,7 @@ Textyle.js requires **jQuery** and **textyle.js** ( or **textyle.min.js**)
 ## Opitions
 
 You can choose some following options or add callback function.
-values below is default.
+Values below is default.
 
 	$('target').textyle({
 		duration : 400,
@@ -57,6 +60,12 @@ values below is default.
 		easing : 'swing',
 		callback : null
 	});
+
+Easing property can be extended by **jquery.easing.js**.
+If you want , add reading script below next to jQuery.
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
 
 ### example
 
@@ -73,5 +82,5 @@ values below is default.
     });
 
 # DEMO
-<iframe height='577' scrolling='no' title='Textyle.js - Simple Text Effect -' src='//codepen.io/mycreatesite/embed/vvpmgy/?height=577&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/mycreatesite/pen/vvpmgy/'>Textyle.js - Simple Text Effect -</a> by mycreatesite (<a href='https://codepen.io/mycreatesite'>@mycreatesite</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+
+ [codepen](https://codepen.io/mycreatesite/pen/vvpmgy)
