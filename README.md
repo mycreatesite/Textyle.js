@@ -8,7 +8,7 @@ A simple text effect with jQuery and tiny CSS.
 
 ## JS
 
-Textyle.js requires **jQuery** and **textyle.js** ( or **textyle.min.js**).
+Textyle.js requires **jQuery** and **textyle.js** ( or **textyle.min.js**).  
 Easing pattern can be extended by **jquery.easing.js**.
 
 ### read
@@ -51,7 +51,7 @@ Easing pattern can be extended by **jquery.easing.js**.
 
 ## Opitions
 
-You can choose some following options or add callback function.
+You can choose some following options or add callback function.  
 Values below is default.
 
 	$('target').textyle({
@@ -61,7 +61,7 @@ Values below is default.
 		callback : null
 	});
 
-Easing property can be extended by **jquery.easing.js**.
+Easing property can be extended by **jquery.easing.js**.  
 If you want , add reading script below next to jQuery.
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
