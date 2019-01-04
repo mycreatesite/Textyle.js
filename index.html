@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Textyle.js</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<p class="ex1">TEXTYLE</p>
+		<p class="ex2">TEXTYLE</p>
+		<p class="desc">- Simple Text Effect -</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="textyle.min.js"></script>
+		<script>
+			$(window).on('load',function(){
+				//simple use
+				$('.ex1').textyle();
+				$('.desc').textyle();
+				//you can select options or add callback
+				$('.ex2').textyle({
+									duration : 400,
+									delay : 100,
+									easing : 'swing',
+									callback : function(){
+										$(this).css({
+											color : 'coral',
+											transition : '1s',
+										});
+										$('.desc').css('opacity',1);
+									}
+								});
+			});
+		</script>
+	</body>
+</html>
