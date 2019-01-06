@@ -1,3 +1,9 @@
+/*
+ * Textyle.js
+ * https://myscreate.com
+ * MIT licensed
+ * Copyright (C) 2019 ma-ya's CREATE
+ */
 (function($){  
 	$.fn.textyle = function(options){
 		var target = this;
