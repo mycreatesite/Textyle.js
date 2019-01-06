@@ -1,8 +1,9 @@
 /*
  * Textyle.js
- * https://myscreate.com
+ * https://github.com/mycreatesite/Textyle.js
  * MIT licensed
  * Copyright (C) 2019 ma-ya's CREATE
+ * https://myscreate.com
  */
 (function($){  
 	$.fn.textyle = function(options){
