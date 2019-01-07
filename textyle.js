@@ -17,16 +17,15 @@
 				};
 		var setting = $.extend(defaults, options);
 		targetTxt.each(function(){
-			var target = $(this);
+			var texts = $(this);
 			if(this.nodeType === 3){
-				mkspn(target);
+				mkspn(texts);
 			}
 		});
-		function mkspn(elem){
-			elem.replaceWith(elem.text().replace(/(\S)/g,'<span>$1</span>'));
+		function mkspn(texts){
+			texts.replaceWith(texts.text().replace(/(\S)/g,'<span>$1</span>'));
 		}
-		this.each(function(){
-			var target = $(this);
+		return this.each(function(){
 			var len = target.children().length;
 			target.css('opacity',1);
 			for (var i = 0; i < len; i++) {
@@ -38,7 +37,9 @@
 					left : 0,
 				},setting.duration,setting.easing,setting.callback);
 			};
+			if(typeof setting.callback !== 'function'){
+				console.error('Textyle.js: `setting.callback` must be a function.');
+			};
 		});
-		return this;
 	};
 }( jQuery ));
