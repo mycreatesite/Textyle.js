@@ -1,5 +1,5 @@
 /*
- * Textyle.js
+ * Textyle.js - v2.0
  * https://github.com/mycreatesite/Textyle.js
  * MIT licensed
  * Copyright (C) 2019 ma-ya's CREATE
@@ -36,9 +36,6 @@
 					top : 0,
 					left : 0,
 				},setting.duration,setting.easing,setting.callback);
-			};
-			if(typeof setting.callback !== 'function'){
-				console.error('Textyle.js: `setting.callback` must be a function.');
 			};
 		});
 	};
